@@ -1,4 +1,4 @@
-package org.acme.websockets;
+package at.htl.websockets;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.websocket.EncodeException;
@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.requireNonNull;
 
-@ServerEndpoint("/start-websocket/{name}")
+@ServerEndpoint("/chat/{username}")
 @ApplicationScoped
 public class StartWebSocket {
 
